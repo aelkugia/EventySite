@@ -1,0 +1,2 @@
+PHP Warning:  require_once(../util/DBUtils.php): failed to open stream: No such file or directory in /var/www/eventy/objects/event.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../util/DBUtils.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/eventy/objects/event.php on line 2

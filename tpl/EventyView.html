@@ -1,0 +1,80 @@
+<div id="layout" title="">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#"><img class="pure-img-responsive" alt="Eventy" width="70" src="img/white-eventy-text.png"></a>
+
+            <ul>
+                <li class="menu-item-divided"><a href="#event/0">Add Event</a></li>
+                <li class="menu-item-divided pure-menu-selected"><a href="#home">My Events</a></li>
+
+                <li><a id="logoutBtn" href="#logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main" title="">
+        <div class="header">
+            <h1><%= name %></h1>
+            <!--<h2>Subtitle</h2>-->
+        </div>
+
+        <div id="my-events-view" class="content" title="">
+        	<form class="pure-form pure-form-aligned">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="name">Event Name</label>
+                        <input id="name" type="text" style="width:60%;" placeholder="" value="<%= name %>">
+                    </div>
+            
+                    <div class="pure-control-group">
+                        <label for="event_time">Date</label>
+                        <input id="event_time" type="text" style="width:60%;" placeholder="" value="<%= date %>">
+                    </div>
+            
+                    <div class="pure-control-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" type="text" style="width:60%;" placeholder=""><%= description %></textarea>
+                    </div>
+                    
+                    <div class="pure-control-group">
+                        <label for="location_string">Location</label>
+                        <input id="location_string" type="text" style="width:60%;" placeholder="" value="<%= location_string %>">
+                    </div> 
+                    
+                   <div class="pure-control-group">
+                        <label for="location_lat">Latitude</label>
+                        <input id="location_lat" type="text" style="width:60%;" placeholder="" value="<%= location_lat %>">
+                    </div>
+                    
+                    <div class="pure-control-group">
+                        <label for="location_long">Longitude</label>
+                        <input id="location_long" type="text" style="width:60%;" placeholder="" value="<%= location_long %>">
+                    </div>
+                    
+                    <div class="pure-control-group">
+                        <label for="image">Image URL</label>
+                        <input id="image" type="text" style="width:60%;" placeholder="" value="<%= image %>">
+                    </div>
+                    
+                    <div id="category-container" class="pure-control-group">
+						
+                    </div>
+                    
+                    <div id="public-private-container" class="pure-control-group">
+						
+                    </div>
+            
+                    <div class="pure-controls">
+                        <button id="submitBtn" class="pure-button pure-button-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div id="layout" title="">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#"><img class="pure-img-responsive" alt="Eventy" width="70" src="img/white-eventy-text.png"></a>
+
+            <ul>
+                <li class="menu-item-divided"><a href="#event/0">Add Event</a></li>
+                <li class="menu-item-divided pure-menu-selected"><a href="#home">My Events</a></li>
+
+                <li><a id="logoutBtn" href="#logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main" title="">
+        <div class="header">
+            <h1>My Events</h1>
+            <!--<h2>Subtitle</h2>-->
+        </div>
+
+        <div id="my-events-view" class="content" title="">
+        </div>
+        
+        <div class="content" style="margin-bottom:50px;">
+        	<ul class="pagination">
+              <li class="disabled"><a href="#">&laquo;</a></li>
+              <li class="active"><a href="#"><%= page %></a></li>
+            
+              <li><a id="nextBtn" href="#">&raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
